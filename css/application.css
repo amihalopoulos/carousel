@@ -1,0 +1,42 @@
+#container {
+  height: 500px;
+  width: 90%;
+  background: #000000;
+  margin: auto;
+}
+
+#images {
+
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: auto;
+}
+.button {
+  color: #FFFFFF;
+  background-color: #0000FF;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+}
+li {
+  list-style: none;
+  display: inline;
+}
+.hidden {
+  display: none;
+}
+
+.selected {
+
+}
+
+#previous {
+  margin-left: 10%;
+}
+#next {
+  margin-left: 85%;
+}
