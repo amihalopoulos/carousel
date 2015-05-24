@@ -1,42 +1,44 @@
 #container {
   height: 500px;
-  width: 90%;
+  width: 85%;
   background: #000000;
   margin: auto;
 }
 
-#images {
+#prev, #nxt {
+  height: 500px;
+  width:100px;
+  color:yellow;
+  background-color: black;
+  opacity: .5;
+  visibility:hidden;
+  line-height: 500px;
+}
+#prev {
+  position: absolute;
+}
 
+#nxt {
+  float: right;
+}
+
+#container:hover > #nxt, #container:hover > #prev{
+  visibility: visible;
+}
+
+#images {
+  list-style: none;
 }
 
 img {
-  display: block;
-  margin: 0 auto;
   height: 500px;
   width: auto;
-}
-.button {
-  color: #FFFFFF;
-  background-color: #0000FF;
-  width: 100px;
-  height: 40px;
   position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
-li {
-  list-style: none;
-  display: inline;
-}
+
 .hidden {
   display: none;
-}
-
-.selected {
-
-}
-
-#previous {
-  margin-left: 10%;
-}
-#next {
-  margin-left: 85%;
 }
