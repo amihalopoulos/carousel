@@ -4,7 +4,7 @@ $(document).ready(function() {
     slide(images, "next");
   });
 
-  $('#test').click(function() {
+  $('#prev').click(function() {
     slide(images, "previous");
   });
 
