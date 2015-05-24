@@ -4,6 +4,10 @@ $(document).ready(function() {
     slide(images, "next");
   });
 
+  $('#test').click(function() {
+    slide(images, "previous");
+  });
+
   $('#previous').click(function() {
     slide(images, "previous");
   });
