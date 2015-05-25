@@ -11,7 +11,7 @@
           $selected.fadeIn(800)
           $(imageArray[i]).toggleClass('selected hidden')
           $selected.toggleClass('hidden selected')
-
+          specifyDot(i, $( "li" ).index( $selected ))
           break;
         }
       };
@@ -27,8 +27,15 @@
           $selected.fadeIn(800)
           $(imageArray[i]).toggleClass('selected hidden')
           $selected.toggleClass('hidden selected')
+          specifyDot(i, $( "li" ).index( $selected ))
           break;
         }
       };
     }
+  }
+
+  var specifyDot = function(prev, next) {
+    var dots = $('#dots').children('li')
+    $("#dots li").eq(prev).css('opacity', '.3')
+    $("#dots li").eq(next).css('opacity', '1')
   }
