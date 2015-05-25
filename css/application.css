@@ -14,6 +14,7 @@
   visibility:hidden;
   line-height: 500px;
   cursor:pointer;
+  text-align: center;
 }
 #prev {
   position: absolute;
