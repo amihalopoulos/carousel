@@ -7,12 +7,13 @@
 
 #prev, #nxt {
   height: 500px;
-  width:100px;
-  color:yellow;
-  background-color: black;
+  width:140px;
+  color:white;
+  background-color: #777777;
   opacity: .5;
   visibility:hidden;
   line-height: 500px;
+  cursor:pointer;
 }
 #prev {
   position: absolute;
@@ -24,6 +25,7 @@
 
 #container:hover > #nxt, #container:hover > #prev{
   visibility: visible;
+  transition-delay:.3s;
 }
 
 #images {
@@ -41,4 +43,22 @@ img {
 
 .hidden {
   display: none;
+}
+#wrapper {
+  text-align: center;
+}
+#dots {
+  list-style:none;
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#dots li {
+  display:inline-block;
+  border-radius:10px;
+  width:10px;
+  height:10px;
+  margin: 450px 5px 0px 5px;
+  background: white;
 }
