@@ -50,5 +50,5 @@ $(document).ready(function(){
   //loop to cycle through
   setInterval(function(){
       $("#nxt").trigger('click');
-    },2500);
+    },5000);
 });
